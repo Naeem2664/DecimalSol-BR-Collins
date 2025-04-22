@@ -3,9 +3,7 @@ import "../styles/header.css";
 const Header = () => {
   return (
     <>
-    <div className="container header h-[550px] relative">
- 
-  
+   <div className="header h-[550px] w-screen relative">
   <div className="absolute top-5 right-53 w-full h-full grid place-items-center px-3">
     <div className="text-white max-w-2xl space-y-6">
       <h2 className="text-lg md:text-4xl font-bold leading-snug">
@@ -17,6 +15,7 @@ const Header = () => {
     </div>
   </div>
 </div>
+
 
     </>
   );

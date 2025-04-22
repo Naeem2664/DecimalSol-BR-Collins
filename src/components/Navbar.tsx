@@ -7,7 +7,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white py-[15px] md:px-[120px]">
+    <nav className="bg-white py-[6px] lg:px-[120px] md:px-[50px] sm:px-[20px] px-[20px]">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <div className="flex items-center">
           <div className="text-sm">
@@ -18,8 +18,8 @@ export default function Navbar() {
           </div>
         </div>
 
-        <div className="items-center gap-2 hidden md:flex md:w-[470px] md:mr-10">
-          <div className="rounded-full border-1 md:h-[40px] md:w-90 w-50 h-[20px] flex">
+        <div className="items-center gap-2 hidden lg:flex 2xl:w-[550px] xl:w-[470px] lg:w-[400px] lg:mr-5 md:w-[370px] md:mr-6">
+          <div className="rounded-full border-1 md:h-[40px] md:w-60 w-50 h-[20px] flex">
             <Search
               className="mx-3 my-1.5 "
               style={{ fontSize: "13px", color: colors.gray }}
@@ -33,7 +33,7 @@ export default function Navbar() {
           </div>
           <select
             name="Courses"
-            className="border border-orange-400 text-orange-500 bg-transparent py-2 rounded-full text-sm md:h-[40px] h-[30px] w-32 md:w-36 focus:outline-none focus:ring-2 focus:ring-orange-500"
+            className="border border-orange-400 text-orange-500 bg-transparent py-2 rounded-full text-sm md:h-[40px] h-[30px] w-32 md:w-25 focus:outline-none focus:ring-2 focus:ring-orange-500"
           >
             <option value="">Courses</option>
             <option value="">Course 2</option>
@@ -42,7 +42,7 @@ export default function Navbar() {
           </select>
         </div>
 
-        <div className="hidden md:flex gap-3 items-center md:mr-5">
+        <div className="hidden lg:flex gap-2 items-center md:mr-5">
           <Link href={'/'} className="text-sm mx-1">
             About
           </Link>
@@ -50,26 +50,26 @@ export default function Navbar() {
             Terms
           </Link>
           <Link href={"/privacy"}className="text-sm mx-1">
-            Privacy Policy
+            Privacy
           </Link>
         </div>
-        <div className="hidden md:flex gap-2 items-center">
+        <div className="hidden lg:flex gap-1 items-center lg:m-5">
           <ShoppingCart className="w-5 h-5" />
         </div>
-        <div className="hidden md:flex gap-2 items-center">
+        <div className="hidden lg:flex gap-2 items-center">
           <button className="border px-4 py-1 rounded-full text-sm">
             Login
           </button>
         </div>
 
-        <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
+        <button className="lg:hidden" onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? <X /> : <Menu />}
         </button>
       </div>
 
       {isOpen && (
-        <div className="md:hidden mt-3 space-y-2">
-          <div className="items-center gap-2 flex w-100">
+        <div className="lg:hidden mt-3 space-y-2">
+          <div className="items-center gap-2 flex w-100 lg:hidden">
             <input
               type="text"
               placeholder="Search for anything"

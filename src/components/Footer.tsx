@@ -1,10 +1,11 @@
 import { IoLocationSharp } from "react-icons/io5";
-import { Send ,Facebook,Instagram,Linkedin,Twitter} from "lucide-react";
+import { Send, Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
+
 export default function Footer() {
   return (
-    <footer className="bg-[#0D1B22] text-white px-[120px] py-10 ">
+    <footer className="bg-[#0D1B22] text-white px-[10px] sm:px-[120px] py-10">
       <div className="max-w-7xl mx-auto">
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="grid grid-cols-2 md:mr-[100px]">
             <div>
               <div className="mb-8">
@@ -35,7 +36,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="">
+          <div>
             <h4 className="text-lg font-semibold mb-4">Join the Community</h4>
             <p className="text-sm text-gray-300 mb-3">
               2,000+ Students Globally – Connect & Say Hello!
@@ -44,10 +45,10 @@ export default function Footer() {
               <input
                 type="email"
                 placeholder="Email Address"
-                className="bg-[#1C2C34]  flex-1 px-4 py-3 text-sm text-white outline-none rounded-full"
+                className="bg-[#1C2C34] flex-1 px-4 py-3 text-sm text-white outline-none rounded-full"
               />
               <button className="bg-orange-500 p-3 mx-5 rounded-full">
-              <Send className="text-white text-[25px]"/>
+                <Send className="text-white text-[25px]" />
               </button>
             </div>
           </div>
@@ -57,20 +58,17 @@ export default function Footer() {
           <div className="absolute left-1/2 -translate-x-1/2 -top-3"></div>
         </div>
 
-        <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400 gap-4">
+        <div className="flex flex-col md:flex-row justify-center md:justify-between items-center text-sm text-gray-400 gap-4">
           <div className="flex flex-col items-center md:items-start text-center md:text-left">
-            <p>Copyright © 2025 B.R. Collins All Rights Reserved 
-              
-            </p>
+            <p>Copyright © 2025 B.R. Collins All Rights Reserved</p>
             <p>
-            <a href="#" className="underline text-gray-300">
+              <a href="#" className="underline text-gray-300">
                 Terms Of Service
               </a>{" "}
               <a href="#" className="underline text-gray-300 ml-2">
                 Privacy Policy
               </a>
             </p>
-            
           </div>
 
           <div className="flex flex-col items-center md:items-end gap-2">
@@ -84,7 +82,7 @@ export default function Footer() {
                   width: "45px",
                   height: "45px",
                 }}
-              />{" "}
+              />
               <Twitter
                 className="text-[#85AABA] text-xl"
                 style={{
