@@ -12,11 +12,14 @@ interface TestimonialCardProps {
   isActive: boolean;
 }
 
-const TestimonialCard: React.FC<TestimonialCardProps> = ({ testimonial, isActive }) => {
+const TestimonialCard: React.FC<TestimonialCardProps> = ({
+  testimonial,
+  isActive,
+}) => {
   return (
     <div
       className={`rounded-xl p-6 shadow-md transition-all duration-300 ease-in-out ${
-        isActive ? "bg-blue-400 text-white" : "bg-white text-gray-800"
+        isActive ? "bg-[#1176C1] text-white" : "bg-white text-gray-800"
       } min-w-[250px] sm:min-w-[300px] md:min-w-[250px]`}
     >
       <p className="text-3xl mb-4">“</p>
