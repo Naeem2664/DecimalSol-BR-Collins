@@ -22,7 +22,7 @@ const JourneySection = () => {
           </p>
         </div>
 
-        <div className="relative w-full h-56 md:h-64 flex justify-center md:justify-end">
+        <div className="relative w-full h-60 md:h-64 flex justify-center md:justify-end">
           <Image
             src={images.Journey2}
             alt="Student 1"

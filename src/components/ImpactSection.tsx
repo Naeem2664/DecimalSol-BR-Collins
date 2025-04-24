@@ -12,16 +12,16 @@ const ImpactSection = () => {
         everywhere are able to adapt to change and thrive.
       </p>
 
-      <div className="flex flex-col lg:flex-row items-center justify-center gap-5">
-        <div className="w-full max-w-sm rounded-xl overflow-hidden shadow-md">
+      <div className="flex flex-col lg:flex-row items-center justify-center gap-3 ">
+        <div className="2xl:w-170 xl:w-130 lg:w-120 md:w-110 w-full rounded-xl overflow-hidden shadow-md mx-[10px] h-[300px]">
           <Image
             src={images.Impact}
             alt="Happy learner"
-            className="object-cover w-full h-55"
+            className="object-cover w-full h-[300px]"
           />
         </div>
 
-        <div className="grid grid-cols-2 gap-3 md:gap-3">
+        <div className="grid grid-cols-2 gap-3 md:gap-3 2xl:w-150 xl:w-110 lg:w-100 md:w-90 w-full h-[300px]">
           <div className="bg-red-50 p-6 rounded-xl shadow-sm">
             <h3 className="text-2xl font-semibold text-gray-900">500+</h3>
             <p className="text-sm text-gray-600">Learners & counting</p>

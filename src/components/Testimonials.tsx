@@ -3,102 +3,36 @@ import React, { useState, useRef, useEffect } from "react";
 import TestimonialCard from "./TestimonialCard";
 
 const testimonials = [
-  {
-    name: "Hannah R.",
-    role: "Sutton CEO",
-    message:
-      "B.R. Collins' business management course gave me the confidence to lead my team to success.",
-    avatar: "https://randomuser.me/api/portraits/women/44.jpg",
-    platformLogo: "https://cdn-icons-png.flaticon.com/512/733/733547.png",
-  },
+  
   {
     name: "Valerie J.",
     role: "Creasman CEO",
-    message:
-      "The online learning platform is user-friendly, and the courses are top-quality. A great investment!",
+    message:"The online learning platform is user-friendly, and the courses are top-quality. A great investment!",
     avatar: "https://randomuser.me/api/portraits/women/65.jpg",
     platformLogo: "https://cdn-icons-png.flaticon.com/512/2111/2111604.png",
   },
   {
     name: "Hannah R.",
     role: "Sutton CEO",
-    message:
-      "B.R. Collins' business management course gave me the confidence to lead my team to success.",
+    message:"B.R. Collins' business management course gave me the confidence to lead my team to success.",
     avatar: "https://randomuser.me/api/portraits/men/32.jpg",
     platformLogo: "https://cdn-icons-png.flaticon.com/512/733/733547.png",
   },
   {
     name: "Valerie J.",
     role: "Creasman CEO",
-    message:
-      "The online learning platform is user-friendly, and the courses are top-quality. A great investment!",
+    message:"The online learning platform is user-friendly, and the courses are top-quality. A great investment!",
     avatar: "https://randomuser.me/api/portraits/women/65.jpg",
     platformLogo: "https://cdn-icons-png.flaticon.com/512/2111/2111604.png",
   },
   {
     name: "Valerie J.",
     role: "Creasman CEO",
-    message:
-      "The online learning platform is user-friendly, and the courses are top-quality. A great investment!",
+    message:"The online learning platform is user-friendly, and the courses are top-quality. A great investment!",
     avatar: "https://randomuser.me/api/portraits/women/65.jpg",
     platformLogo: "https://cdn-icons-png.flaticon.com/512/2111/2111604.png",
   },
-  {
-    name: "Valerie J.",
-    role: "Creasman CEO",
-    message:
-      "The online learning platform is user-friendly, and the courses are top-quality. A great investment!",
-    avatar: "https://randomuser.me/api/portraits/women/65.jpg",
-    platformLogo: "https://cdn-icons-png.flaticon.com/512/2111/2111604.png",
-  },
-  {
-    name: "Valerie J.",
-    role: "Creasman CEO",
-    message:
-      "The online learning platform is user-friendly, and the courses are top-quality. A great investment!",
-    avatar: "https://randomuser.me/api/portraits/women/65.jpg",
-    platformLogo: "https://cdn-icons-png.flaticon.com/512/2111/2111604.png",
-  },
-  {
-    name: "Valerie J.",
-    role: "Creasman CEO",
-    message:
-      "The online learning platform is user-friendly, and the courses are top-quality. A great investment!",
-    avatar: "https://randomuser.me/api/portraits/women/65.jpg",
-    platformLogo: "https://cdn-icons-png.flaticon.com/512/2111/2111604.png",
-  },
-  {
-    name: "Valerie J.",
-    role: "Creasman CEO",
-    message:
-      "The online learning platform is user-friendly, and the courses are top-quality. A great investment!",
-    avatar: "https://randomuser.me/api/portraits/women/65.jpg",
-    platformLogo: "https://cdn-icons-png.flaticon.com/512/2111/2111604.png",
-  },
-  {
-    name: "Valerie J.",
-    role: "Creasman CEO",
-    message:
-      "The online learning platform is user-friendly, and the courses are top-quality. A great investment!",
-    avatar: "https://randomuser.me/api/portraits/women/65.jpg",
-    platformLogo: "https://cdn-icons-png.flaticon.com/512/2111/2111604.png",
-  },
-  {
-    name: "Valerie J.",
-    role: "Creasman CEO",
-    message:
-      "The online learning platform is user-friendly, and the courses are top-quality. A great investment!",
-    avatar: "https://randomuser.me/api/portraits/women/65.jpg",
-    platformLogo: "https://cdn-icons-png.flaticon.com/512/2111/2111604.png",
-  },
-  {
-    name: "Valerie J.",
-    role: "Creasman CEO",
-    message:
-      "The online learning platform is user-friendly, and the courses are top-quality. A great investment!",
-    avatar: "https://randomuser.me/api/portraits/women/65.jpg",
-    platformLogo: "https://cdn-icons-png.flaticon.com/512/2111/2111604.png",
-  },
+ 
 ];
 
 const Testimonials = () => {
@@ -120,7 +54,7 @@ const Testimonials = () => {
     if (containerRef.current && cardRef.current) {
       const containerWidth = containerRef.current.offsetWidth;
       const cardWidth = cardRef.current.offsetWidth;
-      const newOffset = cardWidth * index - (containerWidth - cardWidth)/2;
+      const newOffset = cardWidth * index - (containerWidth / 2) + (cardWidth / 2);
       setOffset(newOffset);
     }
   }, [index]);

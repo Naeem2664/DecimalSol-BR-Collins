@@ -10,8 +10,8 @@ export default function Navbar() {
     <nav className="bg-white py-[6px] lg:px-[120px] md:px-[50px] sm:px-[20px] px-[20px]">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <div className="flex items-center">
-          <div className="text-sm">
-            <p className="font-bold text-orange-500">B.R. COLLINS</p>
+          <div className="text-2xl">
+            <h2 className="font-bold text-orange-500">B.R. COLLINS</h2>
             <p className="text-xs text-blue-600 tracking-wide">
               TRAINING GROUP
             </p>
@@ -53,11 +53,11 @@ export default function Navbar() {
             Privacy
           </Link>
         </div>
-        <div className="hidden lg:flex gap-1 items-center lg:m-5">
+        <div className="hidden lg:flex gap-1 items-center lg:my-5">
           <ShoppingCart className="w-5 h-5" />
         </div>
-        <div className="hidden lg:flex gap-2 items-center">
-          <button className="border px-4 py-1 rounded-full text-sm">
+        <div className="hidden lg:flex gap-1 items-center">
+          <button type="button" className="border px-4 py-1 rounded-full text-sm">
             Login
           </button>
         </div>
@@ -93,12 +93,10 @@ export default function Navbar() {
           <a href="#" className="block">
             Privacy
           </a>
-          <div className="flex gap-3 items-center">
-            <ShoppingCart className="w-5 h-5 block" />
-            <button className="border px-4 py-1 rounded-full text-sm">
+         
+          <button type="button" className="border px-4 py-1 rounded-full text-sm">
               Login
             </button>
-          </div>
         </div>
       )}
     </nav>

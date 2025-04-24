@@ -1,6 +1,6 @@
 .header {
     position: relative;
-    background: linear-gradient(90deg, rgba(13, 22, 20, 0.633) 0%, rgba(17, 42, 28, 0.094) 33%),
+    background: linear-gradient(90deg, rgba(13, 22, 20, 0.633) 0%, #0A141900 100%),
       url('/assets/images/header.jpeg');
     background-repeat: no-repeat;
     background-size: cover;

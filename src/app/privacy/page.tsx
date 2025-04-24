@@ -58,19 +58,20 @@ export default function PrivacyPolicy() {
               <nav className="">
                 <button
                   onClick={() => scrollToSection("important-information")}
-                  className={`block w-full text-left py-2 rounded-md ${
+                  className={`relative block w-full text-left py-2 pl-5 transition-all duration-200 ${
                     activeSection === "important-information"
-                      ? "text-blue-700 font-medium underline"
+                      ? "text-blue-600 font-semibold underline before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-[6px] before:h-7 before:bg-orange-500"
                       : "text-gray-700 hover:bg-gray-100"
                   }`}
                 >
-                  Important Information
+                  Important Information About Using Our Services
                 </button>
+
                 <button
                   onClick={() => scrollToSection("information-we-collect")}
-                  className={`block w-full text-left py-2 rounded-md ${
+                  className={`relative block w-full text-left py-2 pl-5 transition-all duration-200 ${
                     activeSection === "information-we-collect"
-                      ? "text-blue-700 font-medium underline"
+                      ? "text-blue-600 font-semibold underline before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-[6px] before:h-7 before:bg-orange-500"
                       : "text-gray-700 hover:bg-gray-100"
                   }`}
                 >
@@ -78,9 +79,9 @@ export default function PrivacyPolicy() {
                 </button>
                 <button
                   onClick={() => scrollToSection("how-we-share-information")}
-                  className={`block w-full text-left py-2 rounded-md ${
+                  className={`relative block w-full text-left py-2 pl-5 transition-all duration-200 ${
                     activeSection === "how-we-share-information"
-                      ? "text-blue-700 font-medium underline"
+                      ? "text-blue-600 font-semibold underline before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-[6px] before:h-7 before:bg-orange-500"
                       : "text-gray-700 hover:bg-gray-100"
                   }`}
                 >
@@ -88,9 +89,9 @@ export default function PrivacyPolicy() {
                 </button>
                 <button
                   onClick={() => scrollToSection("third-party-links")}
-                  className={`block w-full text-left py-2 rounded-md ${
+                  className={`relative block w-full text-left py-2 pl-5 transition-all duration-200 ${
                     activeSection === "third-party-links"
-                      ? "text-blue-700 font-medium underline"
+                      ? "text-blue-600 font-semibold underline before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-[6px] before:h-7 before:bg-orange-500"
                       : "text-gray-700 hover:bg-gray-100"
                   }`}
                 >
@@ -98,9 +99,9 @@ export default function PrivacyPolicy() {
                 </button>
                 <button
                   onClick={() => scrollToSection("children-privacy")}
-                  className={`block w-full text-left py-2 rounded-md ${
+                  className={`relative block w-full text-left py-2 pl-5 transition-all duration-200 ${
                     activeSection === "children-privacy"
-                      ? "text-blue-700 font-medium underline"
+                      ? "text-blue-600 font-semibold underline before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-[6px] before:h-7 before:bg-orange-500"
                       : "text-gray-700 hover:bg-gray-100"
                   }`}
                 >
@@ -108,9 +109,9 @@ export default function PrivacyPolicy() {
                 </button>
                 <button
                   onClick={() => scrollToSection("how-we-protect-information")}
-                  className={`block w-full text-left py-2 rounded-md ${
+                  className={`relative block w-full text-left py-2 pl-5 transition-all duration-200 ${
                     activeSection === "how-we-protect-information"
-                      ? "text-blue-700 font-medium underline"
+                      ? "text-blue-600 font-semibold underline before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-[6px] before:h-7 before:bg-orange-500"
                       : "text-gray-700 hover:bg-gray-100"
                   }`}
                 >
@@ -118,9 +119,9 @@ export default function PrivacyPolicy() {
                 </button>
                 <button
                   onClick={() => scrollToSection("policy-changes")}
-                  className={`block w-full text-left py-2 rounded-md ${
+                  className={`relative block w-full text-left py-2 pl-5 transition-all duration-200 ${
                     activeSection === "policy-changes"
-                      ? "text-blue-700 font-medium underline"
+                      ? "text-blue-600 font-semibold underline before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-[6px] before:h-7 before:bg-orange-500"
                       : "text-gray-700 hover:bg-gray-100"
                   }`}
                 >
@@ -129,12 +130,13 @@ export default function PrivacyPolicy() {
               </nav>
             </div>
           </div>
-          <div className="flex-1 bg-white shadow-sm rounded-lg p-6 md:p-8">
+          <div className="flex-1 bg-white shadow-sm rounded-lg p-6 md:p-8 overflow-y-auto">
             <h1 className="text-3xl font-bold text-gray-900 mb-6">
               Privacy Policy
             </h1>
             <p className="text-blue-600 mb-8">
-              Last Updated: <span className="text-gray-700">April 22, 2025</span> 
+              Last Updated:{" "}
+              <span className="text-gray-700">April 22, 2025</span>
             </p>
 
             <section
@@ -337,7 +339,19 @@ export default function PrivacyPolicy() {
                 We may update this Privacy Policy from time to time. We will
                 notify you of any changes by posting the new Privacy Policy on
                 this page and updating the Last Updated date at the top of this
-                Privacy Policy.
+                Privacy Policy. You are responsible for checking this Privacy
+                Policy periodically to stay informed about our practices.
+                We may update this Privacy Policy from time to time. We will
+                notify you of any changes by posting the new Privacy Policy on
+                this page and updating the Last Updated date at the top of this
+                Privacy Policy. You are responsible for checking this Privacy
+                Policy periodically to stay informed about our practices.
+                We may update this Privacy Policy from time to time. We will
+                notify you of any changes by posting the new Privacy Policy on
+                this page and updating the Last Updated date at the top of this
+                Privacy Policy. You are responsible for checking this Privacy
+                Policy periodically to stay informed about our practices.
+
               </p>
             </section>
           </div>
